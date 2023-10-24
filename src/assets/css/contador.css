@@ -1,0 +1,12 @@
+.entrada {
+    height: 93vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #cbddb5, #b9eb7d);
+}
+
+.entrada{
+    font-size: 50px;
+    position: relative;
+    padding: 100px;
+}

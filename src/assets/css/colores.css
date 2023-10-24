@@ -1,0 +1,19 @@
+
+.container {
+    background-color: color;
+    height: 93vh;
+}
+
+.centro {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 100px;
+}
