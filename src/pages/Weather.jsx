@@ -5,7 +5,7 @@ export default function Weather() {
   const [city, setCity] = useState('');
   const [tempCelsius, setTempCelsius] = useState('');
 
-  /*
+  
   const apiKey = '033a1fa5abmsh9e007644ae1aa89p1b77b3jsn1b64080c27ed';
   const apiUrl = 'https://weather-api99.p.rapidapi.com/weather';
 
@@ -15,7 +15,7 @@ export default function Weather() {
       'X-RapidAPI-Key': apiKey,
       'X-RapidAPI-Host': 'weather-api99.p.rapidapi.com'
     }
-  }; */
+  }; 
 
   // Conversion de temperatura
   const convertKelvinToCelsius = (kelvin) => {
