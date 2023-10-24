@@ -24,7 +24,7 @@ import './assets/css/tarea.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/react-webapps/">
     <Routes>
       <Route path='/' element={<Inicio />} />
       <Route path='/colores' element={<Colores />} />
