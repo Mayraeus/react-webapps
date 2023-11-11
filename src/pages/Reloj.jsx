@@ -15,7 +15,8 @@ export default function Reloj() {
   
   const hours = time.getHours().toString()
   const minutes = time.getMinutes().toString().padStart(2, '0')
-  const seconds = time.getSeconds().toString().padStart(2, '0') //rellena la cadena 
+  const seconds 
+  = time.getSeconds().toString().padStart(2, '0') //rellena la cadena 
 
   return (
     <div>
@@ -26,9 +27,8 @@ export default function Reloj() {
         <div className="clock">
           {/*Evalua y concatena*/}
           <div className="time">{`${hours}:${minutes}:${seconds}`}</div> 
-          <h1 className='float-end me-5'>{new Date().toDateString()}</h1>
+          <h1 className='fecha'>{new Date().toLocaleDateString('es', { weekday:"long", year:"numeric", month:"long", day:"numeric"})} </h1>
         </div>
-
       </div>
 
     </div>

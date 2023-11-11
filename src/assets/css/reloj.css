@@ -27,7 +27,11 @@
     font-family: 'TimeTraveler';
     font-size: 200px;
 }
-  
+
+.fecha{
+  font-size: 40px;
+  text-align: right;
+}
   
   
   
