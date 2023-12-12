@@ -11,6 +11,10 @@ import Inicio from './pages/Inicio'
 import Reloj from './pages/Reloj'
 import React from 'react'
 import Tareas from './pages/Tareas'
+import Generador from './pages/Generador'
+import Securitypass from './pages/Securitypass'
+
+import Pruebas from './pages/tests/Pruebas'
 
 //CSS 
 
@@ -21,6 +25,7 @@ import './assets/css/colores.css'
 import './assets/css/reloj.css'
 import './assets/css/clima.css'
 import './assets/css/tarea.css'
+import './assets/css/generador.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -34,6 +39,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/calculadora' element={<Calculadora />} />
       <Route path='/appclima' element={<Weather />} />
       <Route path='/tareas' element={<Tareas />} />
+      <Route path='/generador' element={<Generador />} />
+      <Route path='/security' element={<Securitypass />} />
+      <Route path='/pruebas' element={<Pruebas />} />
     </Routes>
   </BrowserRouter>,
 )

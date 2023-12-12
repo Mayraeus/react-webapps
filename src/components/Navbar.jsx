@@ -29,6 +29,12 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/tareas"><i className='bx bx-coffee'></i> To Do</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/generador"><i className='bx bx-key'></i> Password Generator</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/security"><i className='bx bx-band-aid'></i> Medidor de seguridad</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

@@ -5,7 +5,7 @@ export default function Weather() {
   const [city, setCity] = useState('');
   const [tempCelsius, setTempCelsius] = useState('');
 
-  
+
   const apiKey = '033a1fa5abmsh9e007644ae1aa89p1b77b3jsn1b64080c27ed';
   const apiUrl = 'https://weather-api99.p.rapidapi.com/weather';
 
@@ -15,7 +15,7 @@ export default function Weather() {
       'X-RapidAPI-Key': apiKey,
       'X-RapidAPI-Host': 'weather-api99.p.rapidapi.com'
     }
-  }; 
+  };
 
   // Conversion de temperatura
   const convertKelvinToCelsius = (kelvin) => {
@@ -57,13 +57,13 @@ export default function Weather() {
         <div className="search">
           <input type="text" placeholder="Ciudad" value={city} onChange={InputChange} />
 
-          <button onClick={Search}><i className='bx bx-search bx-tada'></i></button>
+          <button onClick={Search}><i className='bx bx-search'></i></button>
         </div>
         <div className="weather">
-          <br/>
+          <br />
           <img src="https://cdn-icons-png.flaticon.com/512/552/552448.png" height="150px" width="150px" className="weather-icon" alt="Weather Icon" />
-          <br/>
-          <br/>
+          <br />
+          <br />
         </div>
         <h1 className="temp">{tempCelsius}</h1>
         <h2 className="city">{city}</h2>
