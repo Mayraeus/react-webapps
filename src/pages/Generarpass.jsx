@@ -8,80 +8,80 @@ export default function Generarpass() {
         const number = '0123456789';
         const specialchar = '!@#$%^&*()_+~`|}{[]:;?><,./-=';
 
-        let charset = '';
+        let charset = ''
 
         if (letras) {
-            charset += letter;
+            charset += letter
         }
 
         if (numeros) {
-            charset += number;
+            charset += number
         }
 
         if (caracteres_especiales) {
-            charset += specialchar;
+            charset += specialchar
         }
 
         if (!charset.length) {
             // conjunto predeterminado en caso de no ser seleccionado ningún checkbox
-            charset = letter + number + specialchar;
+            charset = letter + number + specialchar
         }
 
-        let password = '';
+        let password = ''
         for (let i = 0; i < length; ++i) {
-            const index = Math.floor(Math.random() * charset.length);
-            password += charset[index];
+            const index = Math.floor(Math.random() * charset.length)
+            password += charset[index]
         }
 
-        return password;
-    };
+        return password
+    }
 
     const measureSecurity = (password) => {
-        const lengthScore = password.length >= 12 ? 2 : 1;
-        const lettersScore = /[a-zA-Z]/.test(password) ? 2 : 0;
-        const numbersScore = /\d/.test(password) ? 2 : 0;
-        const specialCharsScore = /[!@#$%^&*()_+~`|}{[\]:;?><,./-=]/.test(password) ? 2 : 0;
+        const lengthScore = password.length >= 12 ? 2 : 1
+        const lettersScore = /[a-zA-Z]/.test(password) ? 2 : 0
+        const numbersScore = /\d/.test(password) ? 2 : 0
+        const specialCharsScore = /[!@#$%^&*()_+~`|}{[\]:;?><,./-=]/.test(password) ? 2 : 0
 
-        const totalScore = lengthScore + lettersScore + numbersScore + specialCharsScore;
+        const totalScore = lengthScore + lettersScore + numbersScore + specialCharsScore
 
-        return totalScore;
-    };
+        return totalScore
+    }
 
-    const [passwordLength, setPasswordLength] = useState(12);
-    const [useLetters, setUseLetters] = useState(false);
-    const [useNumbers, setUseNumbers] = useState(false);
-    const [useSpecialChars, setUseSpecialChars] = useState(false);
-    const [generatedPassword, setGeneratedPassword] = useState('');
+    const [passwordLength, setPasswordLength] = useState(8)
+    const [useLetters, setUseLetters] = useState(false)
+    const [useNumbers, setUseNumbers] = useState(false)
+    const [useSpecialChars, setUseSpecialChars] = useState(false)
+    const [generatedPassword, setGeneratedPassword] = useState('')
 
     const handlePassword = () => {
-        const password = generatePassword(passwordLength, useLetters, useNumbers, useSpecialChars);
-        setGeneratedPassword(password);
-        const securityScore = measureSecurity(password);
-        console.log(`Seguridad de la contraseña: ${securityScore}`);
-    };
+        const password = generatePassword(passwordLength, useLetters, useNumbers, useSpecialChars)
+        setGeneratedPassword(password)
+        const securityScore = measureSecurity(password)
+        console.log(`Seguridad de la contraseña: ${securityScore}`)
+    }
 
     const handleLengthChange = (e) => {
-        const length = parseInt(e.target.value, 10);
-        setPasswordLength(length);
-    };
+        const length = parseInt(e.target.value, 10)
+        setPasswordLength(length)
+    }
 
     const handleLettersChange = () => {
-        setUseLetters(!useLetters);
-    };
+        setUseLetters(!useLetters)
+    }
 
     const handleNumbersChange = () => {
-        setUseNumbers(!useNumbers);
-    };
+        setUseNumbers(!useNumbers)
+    }
 
     const handleSpecialCharsChange = () => {
-        setUseSpecialChars(!useSpecialChars);
-    };
+        setUseSpecialChars(!useSpecialChars)
+    }
 
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText(generatedPassword)
             .then(() => alert('Contraseña copiada'))
-            .catch((err) => console.error('Error al copiar al portapapeles:', err));
-    };
+            .catch((err) => console.error('Error al copiar al portapapeles:', err))
+    }
 
     return (
         <div>
@@ -90,7 +90,7 @@ export default function Generarpass() {
                 <h2>Generador de Contraseñas</h2>
                 <label>
                     Longitud de la contraseña:
-                    <input type="number" value={passwordLength} onChange={handleLengthChange} min={4} max={64} />
+                    <input type="number" value={passwordLength} onChange={handleLengthChange} min={8} max={64} />
                 </label>
                 <div>
                     <label>

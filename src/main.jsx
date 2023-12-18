@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/** <Route path='/referencias' element={<Referencias />} />*/}
       <Route path='/reloj' element={<Reloj />} />
       <Route path='/calculadora' element={<Calculadora />} />
-      <Route path='/clima' element={<Weather />} />
+      <Route path='/clima' element={<Weather />}/>
       <Route path='/tareas' element={<Tareas />} />
       {/** <Route path='/generador' element={<Generador />} />*/}
       {/** <Route path='/security' element={<Securitypass />} />*/}
