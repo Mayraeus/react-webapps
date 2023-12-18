@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import ComponenteA from '../components/ComponenteA'
-import componenteB from '../components/ComponenteB'
-import { ComponentesProvider, ComponentesContext } from '../context/ComponentesContext'
-import Boton from '../components/Boton'
+import Navbar from '../../components/Navbar'
+import ComponenteA from '../../components/ComponenteA'
+import componenteB from '../../components/ComponenteB'
+import { ComponentesProvider, ComponentesContext } from '../../context/ComponentesContext'
+import Boton from '../../components/Boton'
 
 
 
