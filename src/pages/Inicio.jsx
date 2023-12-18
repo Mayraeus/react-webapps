@@ -56,9 +56,9 @@ export default function Inicio() {
                     <div className="col-6">
                         <div className="card">
                             <div className="card-body bg-secondary text-white">
-                                <Link to='/appclima'>
+                                <Link to='/clima'>
                                     <div className='center text-center'>
-                                        Clima API
+                                        Consultador del clima
                                     </div>
                                 </Link>
                             </div>
