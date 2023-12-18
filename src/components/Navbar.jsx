@@ -24,7 +24,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/reloj"> <i className='bx bx-timer'></i> Reloj en tiempo real</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/appclima"><i className='bx bx-cloud'></i> Clima</Link>
+                            <Link className="nav-link" to="/clima"><i className='bx bx-cloud'></i> Clima</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/tareas"><i className='bx bx-coffee'></i> To Do</Link>

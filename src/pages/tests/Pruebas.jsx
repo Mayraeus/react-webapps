@@ -4,31 +4,31 @@ export default function Pruebas() {
   return (
     <div><ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Inicio</a>
+      <a class="nav-link active" >Inicio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Generador de contraseñas</a>
+      <a class="nav-link" >Generador de contraseñas</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Medidor de contraseñas</a>
+      <a class="nav-link" >Medidor de contraseñas</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contador de caracteres</a>
+      <a class="nav-link" >Contador de caracteres</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Reloj en tiempo real</a>
+      <a class="nav-link" >Reloj en tiempo real</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Selector de colores</a>
+      <a class="nav-link" >Selector de colores</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Calculadora</a>
+      <a class="nav-link" >Calculadora</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Clima</a>
+      <a class="nav-link" >Clima</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">To Do</a>
+      <a class="nav-link" >To Do</a>
     </li>
   </ul></div>
   )
