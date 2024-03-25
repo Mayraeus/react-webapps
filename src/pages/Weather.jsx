@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import React, { useState, useEffect } from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Weather() {
-  const [city, setCity] = useState('');
-  const [tempCelsius, setTempCelsius] = useState('');
+  const [city, setCity] = useState('')
+  const [tempCelsius, setTempCelsius] = useState('')
 
 
-  const apiKey = '033a1fa5abmsh9e007644ae1aa89p1b77b3jsn1b64080c27ed';
-  const apiUrl = 'https://weather-api99.p.rapidapi.com/weather';
+  const apiKey = '033a1fa5abmsh9e007644ae1aa89p1b77b3jsn1b64080c27ed'
+  const apiUrl = 'https://weather-api99.p.rapidapi.com/weather'
 
   const options = {
     method: 'GET',
@@ -19,36 +19,34 @@ export default function Weather() {
 
   // Conversion de temperatura
   const convertKelvinToCelsius = (kelvin) => {
-    return kelvin - 273.15;
-  };
+    return kelvin - 273.15
+  }
 
   //fetch
   const WeatherData = async () => {
     try {
-      const response = await fetch(`${apiUrl}?city=${encodeURIComponent(city)}`, options);
-      const result = await response.json();
+      const response = await fetch(`${apiUrl}?city=${encodeURIComponent(city)}`, options)
+      const result = await response.json()
 
-      console.log(result);
+      console.log(result)
 
-      setCity(result.name);
+      setCity(result.name)
 
       // Kelvin a Celsius
-      const tempCelsius = Math.round(convertKelvinToCelsius(result.main.temp));
-      setTempCelsius(`${tempCelsius}°C`);
+      const tempCelsius = Math.round(convertKelvinToCelsius(result.main.temp))
+      setTempCelsius(`${tempCelsius}°C`)
     } catch (error) {
-      console.error('Error de datos:', error);
+      console.error('Error de datos:', error)
     }
-  };
+  }
 
   const Search = () => {
-    WeatherData();
-  };
+    WeatherData()
+  }
 
   const InputChange = (event) => {
-    setCity(event.target.value);
-  };
-
-
+    setCity(event.target.value)
+  }
 
   return (
     <div id="contenedor">
@@ -69,5 +67,5 @@ export default function Weather() {
         <h2 className="city">{city}</h2>
       </div>
     </div>
-  );
+  )
 }

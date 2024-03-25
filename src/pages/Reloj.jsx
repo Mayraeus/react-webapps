@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 
 export default function Reloj() {
 
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(new Date())
 
   useEffect(() => { //muestra al componente, efectos secundarios 
     const intervalId = setInterval(() => {

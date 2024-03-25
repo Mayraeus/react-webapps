@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
+/*import Swal from 'sweetalert2'*/
 
 export default function Generarpass() {
 
     const generatePassword = (length = 12, letras = true, numeros = true, caracteres_especiales = true) => {
-        const letter = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const letter = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
         const number = '0123456789';
-        const specialchar = '!@#$%^&*()_+~`|}{[]:;?><,./-=';
+        const specialchar = '!@#$%^&*()_+~`|}{[]:;?><,./-='
 
         let charset = ''
 

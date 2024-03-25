@@ -2,8 +2,9 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //import Securitypass from './pages/Securitypass'
-import Calculadora from './pages/Calculadora'
 //import Referencias from './pages/Referencias'
+import Calculadora from './pages/Calculadora'
+import Generarpass from './pages/Generarpass'
 import Caracteres from './pages/Caracteres'
 //import Generador from './pages/Generador'
 import ReactDOM from 'react-dom/client'
@@ -13,9 +14,9 @@ import Inicio from './pages/Inicio'
 import Tareas from './pages/Tareas'
 import Reloj from './pages/Reloj'
 import React from 'react'
-import Generarpass from './pages/Generarpass'
+import Medidor from './pages/Medidor'
 
-import Pruebas from './pages/tests/Pruebas'
+import Pruebas from './tests/Pruebas'
 
 //CSS 
 
@@ -24,6 +25,7 @@ import './assets/css/generador.css'
 import './assets/css/contador.css'
 import './assets/css/colores.css'
 import './assets/css/general.css'
+import './assets/css/medidor.css'
 import './assets/css/reloj.css'
 import './assets/css/clima.css'
 import './assets/css/tarea.css'
@@ -44,6 +46,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/** <Route path='/security' element={<Securitypass />} />*/}
       <Route path='/pruebas' element={<Pruebas />} />
       <Route path='/generar' element={<Generarpass />}/>
+      <Route path='/medidor' element={<Medidor />}/>
     </Routes>
   </BrowserRouter>,
 )

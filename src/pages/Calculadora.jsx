@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import React, { useState, useEffect } from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Calculadora() {
-  const [displayText, setDisplayText] = useState("");
+  const [displayText, setDisplayText] = useState("")
 
   useEffect(() => {
-    const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll("button")
 
     buttons.forEach((item) => {
       item.onclick = () => {
         if (item.id === "clear") {
-          setDisplayText("");
+          setDisplayText("")
         } else if (item.id === "backspace") {
-          setDisplayText(prevText => prevText.slice(0, -1));
+          setDisplayText(prevText => prevText.slice(0, -1))
         } else if (displayText !== "" && item.id === "equal") {
-          setDisplayText(eval(displayText).toString());
+          setDisplayText(eval(displayText).toString())
         } else if (displayText === "" && item.id === "equal") {
-          setDisplayText("Empty!");
-          setTimeout(() => setDisplayText(""), 3000);
+          setDisplayText("Empty!")
+          setTimeout(() => setDisplayText(""), 3000)
         } else {
-          setDisplayText(prevText => prevText + item.id);
+          setDisplayText(prevText => prevText + item.id)
         }
-      };
-    });
-  }, [displayText]);
+      }
+    })
+  }, [displayText])
 
   return (
     <div>

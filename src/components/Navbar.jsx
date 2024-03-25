@@ -5,7 +5,6 @@ export default function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-sm bg-light">
-                
                 <div className="container-fluid">
                     <ul className="navbar-nav">
                         <li className="nav-item">
@@ -32,13 +31,13 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/generar"><i className='bx bx-key'></i> Password Generator</Link>
                         </li>
-                        {/**<li className="nav-item">
-                            <Link className="nav-link" to="/security"><i className='bx bx-band-aid'></i> Medidor de seguridad</Link>
-                        </li>*/}
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/medidor"><i className='bx bx-search-alt'></i> Medidor de seguridad</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     )
 }
-
+ 

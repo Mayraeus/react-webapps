@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import React, { useState, useEffect } from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Caracteres() {
-  const [inputText, setText] = useState('');
-  const [word, setWord] = useState(0);
-  const [char, setChar] = useState(0);
+  const [inputText, setText] = useState('')
+  const [word, setWord] = useState(0)
+  const [char, setChar] = useState(0)
 
   useEffect(() => {
     const words = inputText.trim().split(/\s+/); // elimina espacios en blanco
     setWord(words.length === 1 && words[0] === '' ? 0 : words.length);
-    setChar(inputText.length);
-  }, [inputText]);
+    setChar(inputText.length)
+  }, [inputText])
 
   const cambiante = (e) => {
-    setText(e.target.value);
-  };
+    setText(e.target.value) 
+  }
 
   return (
     <>
@@ -29,14 +29,8 @@ export default function Caracteres() {
           </h1>
         </center>
         <br />
-        <textarea
-          className="form-control"
-          rows="8"
-          cols="45"
-          value={inputText}
-          onChange={cambiante}
-        />
+        <textarea className="form-control" rows="8" cols="45" value={inputText} onChange={cambiante} />
       </div>
     </>
-  );
+  )
 }
