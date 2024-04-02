@@ -1,7 +1,7 @@
-import React from 'react'
+/* import React from 'react'
 import Navbar from '../components/Navbar'
 
-export default function Inicio() {
+export default function Test() {
   return (
     <>
     <Navbar/>
@@ -11,3 +11,4 @@ export default function Inicio() {
     </>
   )
 }
+ */

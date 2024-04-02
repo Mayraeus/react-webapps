@@ -17,6 +17,7 @@ import React from 'react'
 import Medidor from './pages/Medidor'
 
 import Pruebas from './tests/Pruebas'
+//import Test from './tests/Test'
 
 //CSS 
 
@@ -47,6 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/pruebas' element={<Pruebas />} />
       <Route path='/generar' element={<Generarpass />}/>
       <Route path='/medidor' element={<Medidor />}/>
+      {/* <Route path='/test' element={<Test />}/> */}
     </Routes>
   </BrowserRouter>,
 )

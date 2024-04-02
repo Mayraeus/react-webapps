@@ -1,12 +1,12 @@
-import React from 'react'
+/*import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 
-export default function Pruebas() {
+export default function Titulo() {
   return (
     <>
-      <Navbar></Navbar>
-      <div className="container-fluid">
+      <Navbar/>
+      <div className="contai  ner-fluid">
 
         <div className="row flex-nowrap">
           <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -39,11 +39,8 @@ export default function Pruebas() {
               </ul>
             </div>
           </div>
-          <div className="col py-3">
-            Content area...
-          </div>
         </div>
       </div>
-    </>
+    </Navbar>
   );
-}
+} */
