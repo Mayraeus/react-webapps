@@ -25,9 +25,9 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/clima"><i className='bx bx-cloud'></i> Clima</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="/tareas"><i className='bx bx-coffee'></i> To Do</Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link className="nav-link" to="/generar"><i className='bx bx-key'></i> Password Generator</Link>
                         </li>

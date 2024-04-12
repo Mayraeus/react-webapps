@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom/client'
 import Colores from './pages/Colores'
 import Weather from './pages/Weather'
 import Inicio from './pages/Inicio'
-import Tareas from './pages/Tareas'
+/* import Tareas from './pages/Tareas' */
 import Reloj from './pages/Reloj'
 import React from 'react'
 import Medidor from './pages/Medidor'
@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/reloj' element={<Reloj />} />
       <Route path='/calculadora' element={<Calculadora />} />
       <Route path='/clima' element={<Weather />}/>
-      <Route path='/tareas' element={<Tareas />} />
+      {/* <Route path='/tareas' element={<Tareas />} /> */}
       {/** <Route path='/generador' element={<Generador />} />*/}
       {/** <Route path='/security' element={<Securitypass />} />*/}
       <Route path='/pruebas' element={<Pruebas />} />
